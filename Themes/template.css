@@ -46,12 +46,20 @@
 }
 /* fixes */
 .theme-dark {
-  --background-primary: none;
-  --background-secondary: none;
-  --background-tertiary: none;
-  --background-accent: none;
+    --background-primary: none;
+    --background-secondary: none;
+    --background-tertiary: none;
+    --background-accent: none;
 
-  --text-normal: var(--primary5-colour) ;
+    --text-link: var(--highlight);
+    --text-link-low-saturation: rgba(var(--rgb-highlight), 50%);
+    --text-positive: var(--online-color);
+    --text-warning: var(--afk-color);
+    --text-danger: var(--dnd-color);
+    --text-brand: var(--highlight);
+    --text-normal: var(--primary5-colour) ;
+    --text-muted: var(--text);
+    --channels-default: var(--text);
 } 
 /*--------------------------------------------------------*/
 
