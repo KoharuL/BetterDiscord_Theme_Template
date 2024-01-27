@@ -1,18 +1,21 @@
 :root{
-    --background: url('https://static.zerochan.net/Fischl.full.3555053.jpg');
+    --background: url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Images/Fischl.png');
     --activetext-colour: white;
 
     --primary1-colour: rgb(107, 60, 146); /* main color */
     --primary2-colour: rgba(107, 60, 146, 0.6);
     --primary3-colour: rgba(107, 60, 146, 0.5);
     --primary4-colour: rgba(107, 60, 146, 0.4);
-    --primary5-colour: rgb(139, 100, 170); /* for text */
+    --primary5-colour: rgb(193, 176, 207); /* for text */
     --primary6-colour: rgb(139, 100, 170); /* for mentioned text */
+    --primary7-colour: rgba(139, 100, 170, 0.15) ; /* for mentioned */
 
     --secondary1-colour: rgba(50,50,50,0.0);
     --secondary2-colour: rgba(107, 60, 146, 0.5);
     --secondary3-colour: rgba(0,0,0,0.5);
     --secondary4-colour: rgba(50,50,50,0.3);
+
+    --test: rgb(255, 0, 0) ;
 
     --transparency: rgba(0,0,0,0.75) ;
     --transparency-1: linear-gradient(to right, var(--transparency), var(--transparency));
@@ -287,10 +290,15 @@
                 background-color: var(--secondary2-colour);
             }
 
+
 /*Messages*/
+    span {
+        color: var(--primary5-colour) ;
+    }
+    
     #app-mount code {
         background-color: var(--secondary1-colour) ;
-        color: var(var(--primary5-colour)) ;
+        color: var(--primary4-colour) ;
     }
 
     #app-mount .mention,
@@ -298,15 +306,19 @@
         background-color: var(--primary4-colour); 
         color: var(--primary6-colour);
     }
-    #app-mount .mentioned__58017 {background-color: var(--primary3-colour);}
+    #app-mount .mentioned__58017 {background-color: var(--primary7-colour);}
     #app-mount .mentioned__58017 .contents-2mQqc9, 
     #app-mount .mentioned__58017 .container-1ov-mD,
     #app-mount .channelMention {
-        background-color: var(--primary3-colour);
+        background-color: var(--primary7-colour);
     }
     #app-mount .mentioned__58017:before {
         background: var(--primary1-colour); 
         width: 3px;
+    }
+
+    .mentioned__58017::before {
+        background-color: var(--primary4-colour);
     }
 
     #app-mount .channelMention .channelWithIcon path {fill: var(--primary1-colour)}
@@ -422,7 +434,7 @@
 
 
 /*ScrollBars*/
-#app-mount ::-webkit-scrollbar-thumb {background-color: var(--primary2-colour); border-color: transparent;}
+#app-mount ::-webkit-scrollbar-thumb {background-color: var(--primary3-colour); border-color: transparent;}
 
 #app-mount .messagesWrapper_ea2b0b ::-webkit-scrollbar-track-piece, 
 #app-mount .peopleColumn__51df3 ::-webkit-scrollbar-track-piece, 
@@ -437,9 +449,9 @@
 #app-mount .homeWrapperNormal__6f127 ::-webkit-scrollbar-track,
 #app-mount .container-3wLKDe ::-webkit-scrollbar-track,
 #app-mount .enterDone_a21e0b ::-webkit-scrollbar-track {
-    background-color: var(--primary3-colour); 
-    border-radius: 10px; 
-    border-color: var(--primary3-colour)
+    background-color: var(--primary4-colour); 
+    border-radius: 10px;
+    border-color: var(--primary4-colour)
 }
 
 /*Settings*/
@@ -858,3 +870,4 @@
 
 #app-mount .wordmark__0d178 {top: 3.3px;}
 #app-mount .winButton__88672 {top: 2px;}
+
