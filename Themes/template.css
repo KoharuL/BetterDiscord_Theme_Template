@@ -52,7 +52,7 @@
     --background-accent: none;
 
     --text-link: var(--primary6-colour);
-    --text-link-low-saturation: rgba(var(--rgb-highlight), 50%);
+    --text-link-low-saturation: rgba(var(--primary6-colour), 50%);
     --text-positive: var(--online-color);
     --text-warning: var(--afk-color);
     --text-danger: var(--dnd-color);
