@@ -179,7 +179,10 @@
        #app-mount .containerDefault__3187b.selected__3b4cb .wrapper__7bcde {width: 100%;}
        #app-mount .wrapper__7bcde { background-color: var(--secondary1-colour) }
        #app-mount .wrapper__7bcde:hover,
-       #app-mount .containerDefault__3187b.selected__3b4cb  .wrapper__7bcde { background-color: var(--secondary2-colour)}
+       #app-mount .containerDefault__3187b.selected__3b4cb  .wrapper__7bcde { 
+            color: var(--primary1-colour) ;
+            background-color: var(--secondary2-colour) ;
+       }
        #app-mount .containerDefault__3187b .wrapper__7bcde{
            width: 190px; 
            transition: width 0.2s; 
