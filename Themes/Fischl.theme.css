@@ -1,0 +1,37 @@
+/**
+ * @name Fischl
+ * @author Lemon 
+ * @version 1.0.x
+ * @description Fischl Theme
+ */
+
+
+@import url('https://raw.githack.com/Ruben7173/Ruben7173.github.io/master/BetterDiscord-Themes/Modules/transparency2.css');
+@import url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Themes/template.css');
+
+:root{
+    --background: url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Images/Fischl.png');
+    --activetext-colour: white;
+
+    --primary1-colour: rgb(107, 60, 146); /* main color */
+    --primary2-colour: rgba(107, 60, 146, 0.6);
+    --primary3-colour: rgba(107, 60, 146, 0.5);
+    --primary4-colour: rgba(107, 60, 146, 0.4);
+    --primary5-colour: rgb(193, 176, 207); /* for text */
+    --primary6-colour: rgb(139, 100, 170); /* for mentioned text */
+    --primary7-colour: rgba(139, 100, 170, 0.15) ; /* for mentioned */
+
+    --secondary1-colour: rgba(50,50,50,0.0);
+    --secondary2-colour: rgba(107, 60, 146, 0.5);
+    --secondary3-colour: rgba(0,0,0,0.5);
+    --secondary4-colour: rgba(50,50,50,0.3);
+
+    --test: rgb(255, 0, 0) ;
+
+    --transparency: rgba(0,0,0,0.75) ;
+    --transparency-1: linear-gradient(to right, var(--transparency), var(--transparency));
+    --transparency-2: linear-gradient(to right, var(--transparency), var(--transparency));
+    --transparency-3: linear-gradient(to right, var(--transparency), var(--transparency));
+    --transparency-4: linear-gradient(to right, var(--transparency), var(--transparency));
+    --transparency-5: linear-gradient(to right, var(--transparency), var(--transparency));
+}
