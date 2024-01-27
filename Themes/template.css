@@ -2,11 +2,12 @@
     --background: url('https://static.zerochan.net/Fischl.full.3555053.jpg');
     --activetext-colour: white;
 
-    --primary1-colour: rgb(107, 60, 146);
+    --primary1-colour: rgb(107, 60, 146); /* main color */
     --primary2-colour: rgba(107, 60, 146, 0.6);
     --primary3-colour: rgba(107, 60, 146, 0.5);
     --primary4-colour: rgba(107, 60, 146, 0.4);
-    --primary5-colour: rgb(139, 100, 170);
+    --primary5-colour: rgb(139, 100, 170); /* for text */
+    --primary6-colour: rgb(139, 100, 170); /* for mentioned text */
 
     --secondary1-colour: rgba(50,50,50,0.0);
     --secondary2-colour: rgba(107, 60, 146, 0.5);
@@ -287,12 +288,15 @@
             }
 
 /*Messages*/
-    #app-mount code {background-color: var(--secondary1-colour)}
+    #app-mount code {
+        background-color: var(--secondary1-colour) ;
+        color: var(var(--primary5-colour)) ;
+    }
 
     #app-mount .mention,
     #app-mount .channelMention .name__48cc7 {
         background-color: var(--primary4-colour); 
-        color: var(--primary5-colour);
+        color: var(--primary6-colour);
     }
     #app-mount .mentioned__58017 {background-color: var(--primary3-colour);}
     #app-mount .mentioned__58017 .contents-2mQqc9, 
