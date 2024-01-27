@@ -51,15 +51,15 @@
     --background-tertiary: none;
     --background-accent: none;
 
-    --text-link: var(--highlight);
+    --text-link: var(--primary6-colour);
     --text-link-low-saturation: rgba(var(--rgb-highlight), 50%);
     --text-positive: var(--online-color);
     --text-warning: var(--afk-color);
     --text-danger: var(--dnd-color);
-    --text-brand: var(--highlight);
+    --text-brand: var(--primary6-colour);
     --text-normal: var(--primary5-colour) ;
-    --text-muted: var(--text);
-    --channels-default: var(--text);
+    --text-muted: var(--primary5-colour);
+    --channels-default: var(--primary5-colour);
 } 
 /*--------------------------------------------------------*/
 
@@ -839,7 +839,7 @@
 /*TopBar*/
 #app-mount .typeWindows__5fa63 {
    background-color: var(--secondary2-colour); 
-   border-bottom: 2px solid var(--primary2x-colour); 
+   border-bottom: 2px solid var(--primary2-colour); 
    height: 30px;
    margin: 0px;
 }
