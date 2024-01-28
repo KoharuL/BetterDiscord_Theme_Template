@@ -861,4 +861,17 @@
   #app-mount .wordmark__0d178 {top: 3.3px;}
   #app-mount .winButton__88672 {top: 2px;}
 
+  /* Others */
+  div[data-list-item-id="guildsnav___home"] {
+    background: var(--home-image) top center/110% no-repeat;
+  }
+
+  #app-mount [data-list-item-id="guildsnav___home"]>div {
+    color: transparent;
+    background-color: transparent;
+  }
+
+  .channelTextArea__2e60f {
+    background-color: var(--primary4-colour) ;
+  }
 
