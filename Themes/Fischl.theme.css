@@ -7,10 +7,13 @@
 
 
 @import url('https://raw.githack.com/Ruben7173/Ruben7173.github.io/master/BetterDiscord-Themes/Modules/transparency2.css');
-@import url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Themes/template.css');
+/* @import url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Themes/template.css'); */
+@import url('https://rawcdn.githack.com/KoharuL/BetterDiscord_Theme_Template/481ffbe8eeb7343374f36bd04efc2c016d26baa9/Themes/template.css');
 
 :root{
-    --background: url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Images/Fischl.png');
+    --home-image: url('https://i.pinimg.com/474x/71/93/16/71931630d3c96617c170699c692004c4.jpg');
+    /* --background: url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Images/Fischl.png'); */
+    /* --background: url('https://i.pinimg.com/originals/b5/6f/30/b56f30214e1795694d493d907959357a.gif'); */
     --activetext-colour: white;
 
     --primary1-colour: rgb(107, 60, 146); /* main color */
@@ -23,15 +26,62 @@
 
     --secondary1-colour: rgba(50,50,50,0.0);
     --secondary2-colour: rgba(107, 60, 146, 0.5);
-    --secondary3-colour: rgba(0,0,0,0.5);
-    --secondary4-colour: rgba(50,50,50,0.3);
+    --secondary3-colour: rgba(100, 100, 100, 0.1);
+    --secondary4-colour: rgba(50, 50, 50, 0.3);
 
     --test: rgb(255, 0, 0) ;
 
-    --transparency: rgba(0,0,0,0.75) ;
+    --transparency: rgba(var(--red), 0, 0, 0.75) ;
     --transparency-1: linear-gradient(to right, var(--transparency), var(--transparency));
     --transparency-2: linear-gradient(to right, var(--transparency), var(--transparency));
     --transparency-3: linear-gradient(to right, var(--transparency), var(--transparency));
     --transparency-4: linear-gradient(to right, var(--transparency), var(--transparency));
     --transparency-5: linear-gradient(to right, var(--transparency), var(--transparency));
 }
+
+div[data-list-item-id="guildsnav___home"] {
+	background: var(--home-image) top center/110% no-repeat;
+}
+
+#app-mount [data-list-item-id="guildsnav___home"]>div {
+	color: transparent;
+	background-color: transparent;
+}
+
+.app_b1f720 .scrollableContainer__33e06 {
+   background-color: transparent ;
+   border-radius: 5px;
+}
+
+.channelTextArea__2e60f {
+   background-color: var(--primary4-colour) ;
+}
+
+.fullscreen-bg video,
+.fullscreen-bg-video {
+   color: rgba(180, 0, 0, 1) ;
+  position: fixed;
+  top: 50%; left: 50%;
+  z-index: -100;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100;
+  transform: translate(-50%, -50%);
+}
+
+@property --red {
+   syntax: '<number>' ;
+   initial-value: 0 ;
+   inherits: false ;
+}
+
+@keyframes fadeIn {
+   50% { --red: 30 } ;
+}
+
+html {
+   animation: fadeIn 4s infinite ;
+}
+
+

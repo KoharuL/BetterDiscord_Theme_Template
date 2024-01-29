@@ -2,38 +2,72 @@
  * @name Hutao
  * @author Lemon 
  * @version 1.0.x
- * @description Ayanami Theme
+ * @description Hutap Theme
  */
 
 
- @import url('https://raw.githack.com/Ruben7173/Ruben7173.github.io/master/BetterDiscord-Themes/Modules/transparency2.css');
- @import url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Themes/template.css');
+@import url('https://raw.githack.com/Ruben7173/Ruben7173.github.io/master/BetterDiscord-Themes/Modules/transparency2.css');
+@import url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Themes/template.css');
  
- :root{
-    --background-1: url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Images/Hu.Tao.full.3234859.jpg');
-    --background-2: url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Images/Hu.Tao.full.3553669.jpg');
-    --background: var(--background-2) ;
-    --activetext-colour: white;
- 
-    --primary1-colour: rgb(180, 35, 35); /* main color */
-    --primary2-colour: rgba(180, 35, 35, 0.6);
-    --primary3-colour: rgba(180, 35, 35, 0.5);
-    --primary4-colour: rgba(180, 35, 35, 0.4);
-    --primary5-colour: rgb(222, 202, 189); /* for text */
-    --primary6-colour: rgb(255, 50, 50); /* for mentioned text */
-    --primary7-colour: rgba(255, 50, 50, 0.15) ; /* for mentioned */
- 
-    --secondary1-colour: rgba(50,50,50,0.0);
-    --secondary2-colour: rgba(180, 35, 35, 0.5);
-    --secondary3-colour: rgba(0,0,0,0.5);
-    --secondary4-colour: rgba(50,50,50,0.3);
- 
-    --test: rgb(255, 0, 0) ;
- 
-    --transparency: rgba(0,0,0,0.75) ;
-    --transparency-1: linear-gradient(to right, var(--transparency), var(--transparency));
-    --transparency-2: linear-gradient(to right, var(--transparency), var(--transparency));
-    --transparency-3: linear-gradient(to right, var(--transparency), var(--transparency));
-    --transparency-4: linear-gradient(to right, var(--transparency), var(--transparency));
-    --transparency-5: linear-gradient(to right, var(--transparency), var(--transparency));
- }
+:root{
+   --home-image: url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Images/Hutao_Icon.jpg');
+   --background-animated: url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Videos/hu-tao-forest-night-genshin-impact-moewalls-com.mp4') ;
+   --background-1: url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Images/Hu.Tao.full.3234859.jpg');
+   --background-2: url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Images/Hu.Tao.full.3553669.jpg');
+   --background-3: url('https://steamuserimages-a.akamaihd.net/ugc/2315476471663956456/732D8AE115DAF7EC98CBE4B25E96AA044BAC16BE/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false');
+   --background: var(--background-2) ;
+   --activetext-colour: white;
+
+   --primary1-colour: rgb(180, 35, 35); /* main color ( 70% ) */ 
+   --primary2-colour: rgba(180, 35, 35, 0.6);
+   --primary3-colour: rgba(180, 35, 35, 0.5);
+   --primary4-colour: rgba(180, 35, 35, 0.4);
+   --primary5-colour: rgb(222, 202, 189); /* for text */
+   --primary6-colour: rgb(255, 50, 50); /* for mentioned text */
+   --primary7-colour: rgba(255, 50, 50, 0.15) ; /* for mentioned */
+
+   --secondary1-colour: rgba(50,50,50,0);
+   --secondary2-colour: rgba(180, 35, 35, 0.5);
+   --secondary3-colour: rgba(0,0,0,0);
+   --secondary4-colour: rgba(50,50,50,0.3);
+
+   --test: rgb(255, 0, 0) ;
+
+   --transparency: rgba(0,0,0,0.6) ;
+   --transparency-1: linear-gradient(to right, var(--transparency), var(--transparency));
+   --transparency-2: linear-gradient(to right, var(--transparency), var(--transparency));
+   --transparency-3: linear-gradient(to right, var(--transparency), var(--transparency));
+   --transparency-4: linear-gradient(to right, var(--transparency), var(--transparency));
+   --transparency-5: linear-gradient(to right, var(--transparency), var(--transparency));
+}
+
+div[data-list-item-id="guildsnav___home"] {
+	background: var(--home-image) top center/110% no-repeat;
+}
+
+#app-mount [data-list-item-id="guildsnav___home"]>div {
+	color: transparent;
+	background-color: transparent;
+}
+
+.app_b1f720 .scrollableContainer__33e06 {
+   background-color: transparent ;
+   border-radius: 5px;
+}
+
+.channelTextArea__2e60f {
+   background-color: var(--primary4-colour) ;
+}
+
+.fullscreen-bg video,
+.fullscreen-bg-video {
+  position: fixed;
+  top: 50%; left: 50%;
+  z-index: -100;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100;
+  transform: translate(-50%, -50%);
+}
+

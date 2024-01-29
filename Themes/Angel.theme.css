@@ -1,0 +1,258 @@
+/**
+ * @name Angel
+ * @author Lemon 
+ * @version 1.0.x
+ * @description Angel Theme from yog sothoth yard 
+ */
+
+
+ @import url('https://raw.githack.com/Ruben7173/Ruben7173.github.io/master/BetterDiscord-Themes/Modules/transparency2.css');
+ @import url('https://rawcdn.githack.com/KoharuL/BetterDiscord_Theme_Template/04baecf25a20df8e23ffd70de9953e72b434c6ed/Themes/template.css');
+ /* @import url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Themes/template.css'); */
+  
+ :root{
+    --home-image: url('https://raw.githack.com/KoharuL/BetterDiscord_Theme_Template/main/Images/Hutao_Icon.jpg');
+    --background-1: url('https://steamuserimages-a.akamaihd.net/ugc/2315476471663956456/732D8AE115DAF7EC98CBE4B25E96AA044BAC16BE/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false');
+    --background-2: url('https://steamuserimages-a.akamaihd.net/ugc/2155594242454521480/53A0955A4D018E3813645E188452CFABFEFC8CA3/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false');
+    --background: var(--background-1) ;
+    --activetext-colour: white;
+ 
+    --primary1-colour: rgb(180, 35, 35); /* main color ( 70% ) */ 
+    --primary2-colour: rgba(180, 35, 35, 0.6);
+    --primary3-colour: rgba(180, 35, 35, 0.5);
+    --primary4-colour: rgba(180, 35, 35, 0.4);
+    --primary5-colour: rgb(222, 202, 189); /* for text */
+    --primary6-colour: rgb(255, 50, 50); /* for mentioned text */
+    --primary7-colour: rgba(255, 50, 50, 0.15) ; /* for mentioned */
+ 
+    --secondary1-colour: rgba(50,50,50,0);
+    --secondary2-colour: rgba(180, 35, 35, 0.5);
+    --secondary3-colour: rgba(0,0,0,0);
+    --secondary4-colour: rgba(50,50,50,0.3);
+ 
+    --test: rgb(255, 0, 0) ;
+ 
+    --transparency: rgba(0, 0, 0, 0.6) ;
+    --transparency-1: linear-gradient(to right, var(--transparency), var(--transparency));
+    --transparency-2: linear-gradient(to right, var(--transparency), var(--transparency));
+    --transparency-3: linear-gradient(to right, var(--transparency), var(--transparency));
+    --transparency-4: linear-gradient(to right, var(--transparency), var(--transparency));
+    --transparency-5: linear-gradient(to right, var(--transparency), var(--transparency));
+ }
+
+ #app-mount {
+    background-color: rgba(50, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    animation: backgroundFade 6s cubic-bezier(0.5,1.0,0.9,1.0) infinite, backgroundImage 6s cubic-bezier(0.5,1.5,0.9,1.4) infinite, glitch 6s cubic-bezier(0.5,1.5,0.9,1.4) infinite ;
+ }
+
+ /* #distort1 {
+    background-color: rgba(255, 255, 255, 0.05);
+    animation: glitch1 2.5s infinite;
+ }
+
+ #distort2 {
+    background-color: rgba(103, 243, 218, 0.05);
+    animation: glitch2 2.5s infinite;
+ }
+
+ #distort3 {
+    background-color: rgb(241, 111, 111, 0.05); 
+    animation: glitch2 2.5s infinite;
+ } */
+
+ @keyframes backgroundFade {
+    75% { background-color: rgba(50, 0, 0, 0.50) }
+    95% { background-color: rgba(255, 0, 0, 0.5) } ;
+ }
+
+ @keyframes backgroundImage {
+    80% { background-image: var(--background-1) }
+    90% { background-image: var(--background-2) }
+ }
+
+ @keyframes glitch {
+   0% {
+     transform: translate(0.1%, 0) skew(0deg) scale(1);
+   }
+   2% {
+     transform: translate(-0.1%, 0) skew(0deg) scale(1);
+   }
+   4%, 70% {
+     transform: translate(0, 0) skew(0deg);
+   }
+   86% {
+     transform: translate(-0.1%, 0) skew(0deg) scale(1.01);
+   }
+   87% {
+     transform: translate(0, 0) skew(100deg) scale(2) ; 
+   }
+   88% {
+     transform: translate(0.1%, 0) skew(0deg) scale(1)
+   }
+ }
+
+ /* @keyframes glitch1 {
+   0% {
+     transform: translate(-50%, -50%);
+     opacity: 1;
+   }
+   7% {
+     transform: translate(-50%, -50%) skew(-0.5deg, -0.9deg);
+     opacity: 0.75;
+   }
+   10% {
+     transform: translate(-50%, -50%);
+     opacity: 1;
+   }
+   27% {
+     transform: translate(-50%, -50%);
+     opacity: 1;
+   }
+   30% {
+     transform: translate(-50%, -50%) skew(0.8deg, -0.1deg);
+     opacity: 0.75;
+   }
+   35% {
+     transform: translate(-50%, -50%);
+     opacity: 1;
+   }
+   52% {
+     transform: translate(-50%, -50%);
+     opacity: 1;
+   }
+   55% {
+     transform: translate(-50%, -50%) skew(-1deg, 0.2deg);
+     opacity: 0.75;
+   }
+   50% {
+     transform: translate(-50%, -50%);
+     opacity: 1;
+   }
+   72% {
+     transform: translate(-50%, -50%);
+     opacity: 1;
+   }
+   75% {
+     transform: translate(-50%, -50%) skew(0.4deg, 1deg);
+     opacity: 0.75;
+   }
+   80% {
+     transform: translate(-50%, -50%);
+     opacity: 1;
+   }
+   100% {
+     transform: translate(-50%, -50%);
+     opacity: 1;
+   }
+ }
+ 
+ @keyframes glitch2 {
+   0% {
+     transform: translate(-50%, -50%);
+     opacity: 0.25;
+   }
+   7% {
+     transform: translate(-60%, -65%);
+     opacity: 0.5;
+   }
+   10% {
+     transform: translate(-50%, -50%);
+     opacity: 0.25;
+   }
+   27% {
+     transform: translate(-50%, -50%);
+     opacity: 0.25;
+   }
+   30% {
+     transform: translate(-75%, -60%);
+     opacity: 0.5;
+   }
+   35% {
+     transform: translate(-50%, -50%);
+     opacity: 0.25;
+   }
+   52% {
+     transform: translate(-50%, -50%);
+     opacity: 0.25;
+   }
+   55% {
+     transform: translate(-75%, -55%);
+     opacity: 0.5;
+   }
+   50% {
+     transform: translate(-50%, -50%);
+     opacity: 0.25;
+   }
+   72% {
+     transform: translate(-50%, -50%);
+     opacity: 0.25;
+   }
+   75% {
+     transform: translate(-60%, -80%);
+     opacity: 0.5;
+   }
+   80% {
+     transform: translate(-50%, -50%);
+     opacity: 0.25;
+   }
+   100% {
+     transform: translate(-50%, -50%);
+     opacity: 0.25;
+   }
+ }
+ 
+ @keyframes glitch3 {
+   0% {
+     transform: none;
+     opacity: 0.25;
+   }
+   7% {
+     transform: translate(2px, 3px);
+     opacity: 0.5;
+   }
+   10% {
+     transform: none;
+     opacity: 0.25;
+   }
+   27% {
+     transform: none;
+     opacity: 0.25;
+   }
+   30% {
+     transform: translate(5px, 2px);
+     opacity: 0.5;
+   }
+   35% {
+     transform: none;
+     opacity: 0.25;
+   }
+   52% {
+     transform: none;
+     opacity: 0.25;
+   }
+   55% {
+     transform: translate(5px, 1px);
+     opacity: 0.5;
+   }
+   50% {
+     transform: none;
+     opacity: 0.25;
+   }
+   72% {
+     transform: none;
+     opacity: 0.25;
+   }
+   75% {
+     transform: translate(2px, 6px);
+     opacity: 0.5;
+   }
+   80% {
+     transform: none;
+     opacity: 0.25;
+   }
+   100% {
+     transform: none;
+     opacity: 0.25;
+   }
+ } */
